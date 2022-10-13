@@ -1,69 +1,130 @@
 body {
-    background-color: black;
+  background-color: black;
 }
 
 .about-us {
-    padding: 15vh;
+  padding: 15vh;
 }
 
 .name-about-us {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .name-about-us {
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .01em;
-    /* Adjust as needed */
-    animation:
-        typing 3.5s steps(40, end),
-        blink-caret .50s step-end infinite;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.01em;
+  /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-    from {
-        width: 0
-    }
+  from {
+    width: 0;
+  }
 
-    to {
-        width: 100%
-    }
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
 
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: rgb(255, 255, 255);
-    }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
 }
 
-
 .about-us-para {
-    font-size: 20px;
-    color: aqua;
+  font-size: 20px;
+  color: aqua;
 }
 
 .fa-linkedin {
-    padding-right: 50px;
-    padding-left: 50px;
-
-
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .fa {
+  font-size: 20px;
+  color: white;
+}
+
+@media only screen and (max-width: 787px) {
+  .about-us {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .hey-name {
+    padding-left: 25px;
+  }
+  .name-about-us {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .name-about-us {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    /* margin: 0 auto; */
+    /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: 0.em; */
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret 0.5s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+
+    100% {
+      border-color: rgb(255, 255, 255);
+    }
+  }
+
+  .about-us-para {
+    font-size: 20px;
+    color: aqua;
+  }
+
+  .fa-linkedin {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .fa {
     font-size: 20px;
     color: white;
+  }
 }
