@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  padding-top: 60px;
 }
 
 #loading {
@@ -125,14 +126,16 @@ body {
 
 }
 
-
+.port-img {
+  height: 70vh;
+  text-align: center;
+}
 
 
 
 @media only screen and (max-width: 787px) {
-  .about-us {
-    padding-right: 0px;
-    padding-left: 0px;
+  body {
+    padding: 0px;
   }
 
   .hey-name {
@@ -182,6 +185,14 @@ body {
     }
   }
 
+  .about-us {
+    padding-top: 50px;
+  }
+
+  .skills-head {
+    padding-top: 50px;
+  }
+
   .about-us-para {
     font-size: 20px;
     color: aqua;
@@ -214,10 +225,17 @@ body {
   }
 
   .proj-img {
-    border: 30px solid rgb(0, 187, 255);
+    border: 20px solid rgb(0, 187, 255);
     border-radius: 20px;
     height: 80vh;
   }
 
+  .footer {
+    font-size: 8px;
+  }
 
+  .nav-head {
+    position: static;
+    padding: 0px;
+  }
 }
