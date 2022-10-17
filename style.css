@@ -3,6 +3,78 @@ body {
   padding-top: 60px;
 }
 
+.btn-whatsapp-pulse {
+  background: #25d366;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  padding: 35px;
+  text-decoration: none;
+  border-radius: 50%;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+
+.fa-whatsapp {
+  font-size: 30px;
+
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+
+  80% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+}
+
+.btn-whatsapp-pulse-border {
+  bottom: 30px;
+  right: 20px;
+  /* animation-play-state: paused; */
+}
+
+.btn-whatsapp-pulse-border::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  padding: 25px;
+  border: 5px solid #25d366;
+  opacity: 0.75;
+  animation-name: pulse-border;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse-border {
+  0% {
+    padding: 25px;
+    opacity: 0.75;
+  }
+
+  75% {
+    padding: 50px;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .nav-head {
   padding: 0px 50px 0px 50px;
 }
@@ -133,7 +205,7 @@ body {
   padding-left: 50px;
 }
 
-.fa {
+.fa-about-us {
   font-size: 20px;
   color: white;
 }
@@ -192,87 +264,6 @@ body {
   height: 70vh;
   text-align: center;
 }
-
-.btn-whatsapp-pulse {
-  background: #25d366;
-  color: white;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 0;
-  height: 0;
-  padding: 35px;
-  text-decoration: none;
-  border-radius: 50%;
-  animation-name: pulse;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-}
-
-.fa-whatsapp {
-  font-size: 30px;
-
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
-  }
-
-  80% {
-    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
-  }
-}
-
-.btn-whatsapp-pulse-border {
-  bottom: 30px;
-  right: 20px;
-  animation-play-state: paused;
-}
-
-.btn-whatsapp-pulse-border::before {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  padding: 25px;
-  border: 5px solid #25d366;
-  opacity: 0.75;
-  animation-name: pulse-border;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes pulse-border {
-  0% {
-    padding: 25px;
-    opacity: 0.75;
-  }
-
-  75% {
-    padding: 50px;
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -345,15 +336,21 @@ body {
     color: aqua;
   }
 
+  .fa-whatsapp {
+    font-size: 50px;
+
+  }
+
+
   .fa-linkedin {
     padding-right: 50px;
     padding-left: 50px;
   }
 
-  .fa {
+  /* .fa {
     font-size: 20px;
     color: white;
-  }
+  } */
 
   .proj-num {
     margin-top: 20px;
@@ -385,5 +382,12 @@ body {
     position: static;
     padding: 0px;
     padding: 15px 12px 0px 12px;
+  }
+
+  .btn-whatsapp-pulse-border {
+    bottom: 10px;
+    right: 10px;
+    z-index: 300;
+    /* animation-play-state: paused; */
   }
 }
