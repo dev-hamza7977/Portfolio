@@ -24,15 +24,8 @@ body {
   animation-iteration-count: infinite;
 }
 
-<<<<<<< HEAD
 .fa-whatsapp {
   font-size: 30px;
-=======
-
-.fa-whatsapp {
-  font-size: 30px;
-
->>>>>>> dabb3686f87cad71a4bababab8ed89f679ddb64c
 }
 
 @keyframes pulse {
@@ -189,7 +182,6 @@ body {
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-
   from,
   to {
     border-color: transparent;
@@ -270,10 +262,6 @@ body {
   text-align: center;
 }
 
-
-
-
-
 @media only screen and (max-width: 787px) {
   body {
     padding: 0px;
@@ -315,7 +303,6 @@ body {
 
   /* The typewriter cursor effect */
   @keyframes blink-caret {
-
     from,
     to {
       border-color: transparent;
@@ -343,15 +330,8 @@ body {
 
   .fa-whatsapp {
     font-size: 50px;
-<<<<<<< HEAD
   }
 
-=======
-
-  }
-
-
->>>>>>> dabb3686f87cad71a4bababab8ed89f679ddb64c
   .fa-linkedin {
     padding-right: 50px;
     padding-left: 50px;
@@ -400,8 +380,4 @@ body {
     z-index: 300;
     /* animation-play-state: paused; */
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> dabb3686f87cad71a4bababab8ed89f679ddb64c
