@@ -24,7 +24,7 @@ body {
   animation-iteration-count: infinite;
 }
 
-.fa-whatsapp {
+.fa-telegram ,.fa-whatsapp {
   font-size: 30px;
 }
 
