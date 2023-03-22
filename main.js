@@ -55,3 +55,9 @@ document.addEventListener("DOMContentLoaded", () => {
 $(".menu").click(function () {
   $(this).toggleClass("open");
 });
+
+function navbar() {
+  document.getElementById("nav").style.backgroundColor = "black";
+}
+
+
