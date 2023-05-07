@@ -49,6 +49,9 @@
                         <li class="nav-item me-3">
                             <a class="nav-link text-white" href="#projects">Projects</a>
                         </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-white" href="#contact-us">Contatc Us</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -104,7 +107,7 @@
                 <div class="col">
                     <div class="card bg-dark">
                         <div class="card-body text-white">
-                            <h5 class="card-title"><b>WEB DEVELOPMENT</b></h5>
+                            <h5 class="card-title text-card-heading"><b>WEB DEVELOPMENT</b></h5>
                             <p class="card-text">A web designer and frontend web developer from INDIA who loves to
                                 Design the new and amazing web arts and to discover (learn) new techonologies.
                             </p>
@@ -117,9 +120,10 @@
                 </div>
                 <div class="col">
                     <div class="card bg-dark ">
-                        <div class="card-body text-white ">
-                            <h5 class="card-title"><b>ADVANCE WEB DESIGNING</b></h5>
-                            <p class="card-text">A web designer and frontend web developer from INDIA who loves to
+                        <div class="card-body text-white">
+                            <h5 class="card-title text-card-heading"><b>ADVANCE WEB DEVELOPMENT</b></h5>
+                            <p class="card-text ">A web designer and frontend web developer from INDIA
+                                who loves to
                                 Design the new and amazing web arts and to discover (learn) new techonologies.</p>
 
                             <p>
@@ -139,13 +143,12 @@
             </div>
             <div class="row row-cols-1 row-cols-md-2 g-4 py-4">
                 <div class="col">
-                    <p class="py-2 education-text text-white">Education</p>
+                    <p class="py-2 education-text text-warning">Education</p>
                     <div class="card bg-dark">
                         <div class="card-body text-white">
                             <h5 class="card-title"><b>Bachelor's Degree</b></h5>
                             <p class="card-text">BSc IT
                             </p>
-
                             <p>
                                 MUMBAI UNIVERSITY
                             </p>
@@ -153,7 +156,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <p class="py-2 education-text text-white">Experience</p>
+                    <p class="py-2 education-text text-warning">Experience</p>
                     <div class="card bg-dark">
                         <div class="card-body text-white">
                             <h5 class="card-title"><b>Frontend Developer Trainee</b></h5>
@@ -366,7 +369,40 @@
         </div>
     </section>
 
+    <section class="container contact-us" id="contact-us" data-aos="flip-left">
+        <div class="row">
+            <div class="heading-contact text-center">
+                <h3 class="text-white text-contact">
+                    Contact Us
+                </h3>
+            </div>
+            <div class="col-lg-6 logo-contact-sec">
+                <img src="images/logo.png" alt="logo" class="logo-contac mb-5">
+            </div>
+            <div class="col-lg-6">
+                <form action="submit-form.php" method="POST">
+                    <div class="mb-3">
+                        <label or="name" class="form-label text-info"><b>NAME:</b></label>
+                        <input type="text" id="name" name="name" required class="form-control"
+                            placeholder="Enter Your Name">
+                    </div>
+                    <div class="mb-3 mt-2">
+                        <label for="mobile" class="form-label text-info"><b>MOB NO:</b></label>
+                        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" class="form-control"
+                            placeholder="Enter Your Mobile Number">
+                    </div>
+                    <div class="mb-3 mt-2">
+                        <label for="message" class="form-label text-info"><b>ENTER YOUR QUERY
+                                :</b></label>
+                        <textarea id="message" name="message" required class="form-control" rows="3"></textarea>
+                    </div>
+                    <input type="submit" name="submit" value="Submit"
+                        class="btn btn-outline-success justify-content-center mb-3 w-100 text-center mt-3"></button>
 
+                </form>
+            </div>
+        </div>
+    </section>
 
     <section class="footer-section-page bg-dark">
         <footer class="text-center text-lg-start text-white footer">
