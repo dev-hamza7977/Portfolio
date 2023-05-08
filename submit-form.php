@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     fclose($file);
 
     // Redirect the user to a thank-you page
-    header("Location: thankyou.html");
+    // header("Location: thankyou.html");
     exit;
 }
 ?>
