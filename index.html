@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEGHANI HAMZA PORTFOLIO</title>
-    <link rel="icon" href="images/btRghzIY.ico" type="image/ico">
+    <link rel="icon" href="images/logo.ico" type="image/ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
@@ -20,21 +20,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onscroll="navbar()">
+<body>
+
     <section>
         <div class="container">
-            <nav class="navbar navbar-expand-lg nav-head fixed-top" id="nav">
+            <nav class="navbar navbar-expand-lg nav-head fixed-top">
                 <div>
                     <a class="nav-link active text-warning port-text" aria-current="page" href="#"><b>PORTFOLIO</b></a>
                 </div>
 
-                <div class="menu btn12 navbar-toggler" data-menu="12" type="button" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
+                <div class="menu btn12 navbar-toggler" data-menu="12" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <div class="icon"></div>
                 </div>
                 </button>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav justify-content-end w-100">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav justify-content-end w-100 ">
                         <li class="nav-item me-3">
                             <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                         </li>
@@ -48,7 +50,7 @@
                             <a class="nav-link text-white" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link text-white" href="#contact">Contact</a>
+                            <a class="nav-link text-white" href="#contact-us">Contatc Us</a>
                         </li>
                     </ul>
                 </div>
@@ -105,7 +107,7 @@
                 <div class="col">
                     <div class="card bg-dark">
                         <div class="card-body text-white">
-                            <h5 class="card-title"><b>WEB DEVELOPMENT</b></h5>
+                            <h5 class="card-title text-card-heading"><b>WEB DEVELOPMENT</b></h5>
                             <p class="card-text">A web designer and frontend web developer from INDIA who loves to
                                 Design the new and amazing web arts and to discover (learn) new techonologies.
                             </p>
@@ -118,9 +120,10 @@
                 </div>
                 <div class="col">
                     <div class="card bg-dark ">
-                        <div class="card-body text-white ">
-                            <h5 class="card-title"><b>ADVANCE WEB DESIGNING</b></h5>
-                            <p class="card-text">A web designer and frontend web developer from INDIA who loves to
+                        <div class="card-body text-white">
+                            <h5 class="card-title text-card-heading"><b>ADVANCE WEB DEVELOPMENT</b></h5>
+                            <p class="card-text ">A web designer and frontend web developer from INDIA
+                                who loves to
                                 Design the new and amazing web arts and to discover (learn) new techonologies.</p>
 
                             <p>
@@ -140,13 +143,12 @@
             </div>
             <div class="row row-cols-1 row-cols-md-2 g-4 py-4">
                 <div class="col">
-                    <p class="py-2 education-text text-white">Education</p>
+                    <p class="py-2 education-text text-warning">Education</p>
                     <div class="card bg-dark">
                         <div class="card-body text-white">
                             <h5 class="card-title"><b>Bachelor's Degree</b></h5>
                             <p class="card-text">BSc IT
                             </p>
-
                             <p>
                                 MUMBAI UNIVERSITY
                             </p>
@@ -154,7 +156,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <p class="py-2 education-text text-white">Experience</p>
+                    <p class="py-2 education-text text-warning">Experience</p>
                     <div class="card bg-dark">
                         <div class="card-body text-white">
                             <h5 class="card-title"><b>Frontend Developer Trainee</b></h5>
@@ -367,9 +369,40 @@
         </div>
     </section>
 
+    <section class="container contact-us" id="contact-us" data-aos="flip-left">
+        <div class="row">
+            <div class="heading-contact text-center">
+                <h3 class="text-white text-contact">
+                    Contact Us
+                </h3>
+            </div>
+            <div class="col-lg-6 logo-contact-sec">
+                <img src="images/logo.png" alt="logo" class="logo-contac mb-5">
+            </div>
+            <div class="col-lg-6">
+                <form action="public/submit-form.php" id="myform" method="POST">
+                    <div class="mb-3">
+                        <label or="name" class="form-label text-info"><b>NAME:</b></label>
+                        <input type="text" id="name" name="name" required class="form-control"
+                            placeholder="Enter Your Name">
+                    </div>
+                    <div class="mb-3 mt-2">
+                        <label for="mobile" class="form-label text-info"><b>MOB NO:</b></label>
+                        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" class="form-control"
+                            placeholder="Enter Your Mobile Number">
+                    </div>
+                    <div class="mb-3 mt-2">
+                        <label for="message" class="form-label text-info"><b>ENTER YOUR QUERY
+                                :</b></label>
+                        <textarea id="message" name="message" required class="form-control" rows="3"></textarea>
+                    </div>
+                    <input type="submit" name="submit" value="Submit"
+                        class="btn btn-outline-success justify-content-center mb-3 w-100 text-center mt-3"></button>
 
-
-
+                </form>
+            </div>
+        </div>
+    </section>
 
     <section class="footer-section-page bg-dark">
         <footer class="text-center text-lg-start text-white footer">
@@ -407,7 +440,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="form.js"></script>
+
     </script>
 
 

@@ -3,6 +3,10 @@ body {
   padding-top: 60px;
 }
 
+.navbar{
+  background-color: black;
+}
+
 .btn-whatsapp-pulse {
   background: #25d366;
   color: white;
@@ -24,10 +28,8 @@ body {
   animation-iteration-count: infinite;
 }
 
-
-.fa-telegram {
+.fa-telegram ,.fa-whatsapp {
   font-size: 30px;
-
 }
 
 @keyframes pulse {
@@ -184,7 +186,6 @@ body {
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-
   from,
   to {
     border-color: transparent;
@@ -242,6 +243,11 @@ body {
   font-size: 40px;
 }
 
+.text-contact{
+  font-size: 40px;
+  padding: 35px;
+}
+
 .con-img {
   height: 50vh;
   border-left: 5px solid cyan;
@@ -263,11 +269,36 @@ body {
 .port-img {
   height: 70vh;
   text-align: center;
+  border: rgb(0, 0, 0) solid 5px;
 }
 
 
+.logo-contact-sec{
+  border-right: 3px yellow solid;
+  margin-bottom: 5vh;
+}
 
+.logo-contac{
+  height: 60vh;
+    position: absolute;
+    bottom: -60px;
+    left: 34px;
+}
 
+.card:hover{
+  border: 3px cyan solid;
+  font-size: 20px;
+}
+
+.port-img:hover{
+  height: 75vh;
+  /* width: 75vh; */
+  border: 3px greenyellow solid;
+}
+
+.text-card-heading{
+color: rgb(248, 255, 48);
+}
 
 @media only screen and (max-width: 787px) {
   body {
@@ -282,6 +313,10 @@ body {
     font-size: 35px;
     text-align: center;
   }
+
+  /* .logo-contac{
+    margin-left: 65px;
+  } */
 
   .name-about-us {
     overflow: hidden;
@@ -310,7 +345,6 @@ body {
 
   /* The typewriter cursor effect */
   @keyframes blink-caret {
-
     from,
     to {
       border-color: transparent;
@@ -338,9 +372,7 @@ body {
 
   .fa-whatsapp {
     font-size: 50px;
-
   }
-
 
   .fa-linkedin {
     padding-right: 50px;
@@ -379,9 +411,22 @@ body {
   }
 
   .nav-head {
-    position: static;
+    /* position: static; */
     padding: 0px;
     padding: 15px 12px 0px 12px;
+    /* position: fixed; */
+  }
+
+  .logo-contact-sec{
+    border-right: 0px yellow solid;
+    margin-bottom: 0vh;
+  }
+
+  .logo-contac{
+    position: sticky;
+    width: 46vh;
+    margin-left: 25px;
+  
   }
 
   .btn-whatsapp-pulse-border {
@@ -390,4 +435,8 @@ body {
     z-index: 300;
     /* animation-play-state: paused; */
   }
+
+  
+
+
 }
