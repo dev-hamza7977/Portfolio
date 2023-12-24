@@ -1,8 +1,9 @@
+
 .text-thank-you{
     font-size: 20vh;
    font-family: cursive;
    background: -webkit-linear-gradient(rgb(41, 244, 255), rgb(2, 172, 175));
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 227px 0px 227px 0px;
 }
@@ -13,7 +14,29 @@
        font-family: cursive;
        background: -webkit-linear-gradient(rgb(41, 244, 255), rgb(2, 172, 175));
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       
      } 
+.text-thank-you{
+    font-size: 20vh;
+   font-family: cursive;
+   background: -webkit-linear-gradient(rgb(41, 244, 255), rgb(2, 172, 175));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 227px 0px 227px 0px;
+}
+
+@media only screen and (max-width: 787px) {
+    .text-thank-you{
+        font-size: 10vh;
+       font-family: cursive;
+       background: -webkit-linear-gradient(rgb(41, 244, 255), rgb(2, 172, 175));
+      -webkit-background-clip: text;
+      background-clip: text ;
+      -webkit-text-fill-color: transparent;
+      
+     } 
+}
 }
